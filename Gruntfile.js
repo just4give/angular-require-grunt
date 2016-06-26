@@ -28,15 +28,6 @@ module.exports = function(grunt) {
         requirejs: {
             build:{
                 options: {
-                   /* baseUrl: 'src',
-                    mainConfigFile: 'src/main.js',
-                    out: 'build/main.js',
-                    name:'main',
-                    optimize: 'uglify2',
-                    uglify2: {
-                        mangle: false
-                    }*/
-
                     dir: 'build/modules/',
                     modules: [{
                         name: 'main'
@@ -45,24 +36,10 @@ module.exports = function(grunt) {
                     removeCombined: true,
                     baseUrl: './src/modules',
                     mainConfigFile: './src/modules/main.js',
-                    optimize: 'none',
+                    optimize: 'uglify2',
                     uglify2: {
                         mangle: false
                     }
-
-                    /*waitSeconds : 0,
-                    baseUrl : './src',
-                    name : 'main',
-                    mainConfigFile : ['src/main.js'],
-                    out : 'build/main.js',
-                    optimize : 'uglify2',
-                    generateSourceMaps : false,
-                    preserveLicenseComments : false,
-                    inlineText : true,
-                    findNestedDependencies : true,
-                    exclude : [
-
-                    ]*/
 
                 }
             }
