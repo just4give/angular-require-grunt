@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Grunt</title>
+</head>
+<body ng-app="demoApp">
+    <h3>Angular.js + Require.js + Grunt </h3>
+    <p>{{2+4}}</p>
+    <div ng-controller="MainCtrl as vm">
+        <button ng-click="vm.selectUser()">Click</button>
+    </div>
+
+<script src="../lib/requirejs/require.js" data-main="modules/main.js"></script>
+</body>
+</html>
